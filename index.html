@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Weather App</h1>
+
+      <form id="search-form" autocomplete="off" novalidate>
+        <input id="city-input" type="text" placeholder="Enter city" required />
+        <select id="units-select">
+          <option value="metric">°C</option>
+          <option value="imperial">°F</option>
+        </select>
+        <button type="submit">Get Weather</button>
+      </form>
+
+      <div id="status"></div>
+
+      <section id="result" class="card hidden" aria-live="polite" aria-atomic="true">
+        <div class="result-header">
+          <div class="place">
+            <h2 id="city-name">—</h2>
+            <p id="country">—</p>
+          </div>
+          <div class="main-readout">
+            <img id="icon" alt="" />
+            <div id="temperature">—</div>
+          </div>
+        </div>
+      
+        <div class="details">
+          <div><span class="detail-label">Condition:</span><span id="condition">—</span></div>
+          <div><span class="detail-label">Humidity:</span><span id="humidity">—</span></div>
+          <div><span class="detail-label">Wind:</span><span id="wind">—</span></div>
+        </div>
+      </section>
+      
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

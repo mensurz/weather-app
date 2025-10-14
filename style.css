@@ -1,0 +1,79 @@
+:root{
+    --bg:#0f172a;        /* deep navy */
+    --panel:#0b1222;     /* card bg */
+    --muted:#94a3b8;     /* subtle text */
+    --text:#e2e8f0;      /* main text */
+    --border:#243046;    /* card border */
+    --brand:#3b82f6;     /* button */
+  }
+  
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    background: radial-gradient(1200px 800px at 20% -10%, #14203d 0%, var(--bg) 60%);
+    color:var(--text);
+  }
+  
+  /* layout */
+  .container{max-width:760px;margin:48px auto;padding:0 20px}
+  h1{margin:0 0 20px;font-size:42px;letter-spacing:.3px}
+  
+  /* form */
+  form{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+  input,select,button{
+    border:1px solid var(--border);
+    background:rgba(11,18,34,.85);
+    color:var(--text);
+    border-radius:14px;
+    padding:12px 14px;
+    font-size:16px;
+    outline:none;
+  }
+  input{flex:1;min-width:220px}
+  select{width:90px}
+  button{
+    background:var(--brand);
+    border-color:transparent;
+    font-weight:600;
+    cursor:pointer;
+    transition:transform .06s ease, filter .15s ease;
+  }
+  button:hover{filter:brightness(1.07)}
+  button:active{transform:translateY(1px)}
+  
+  /* status text */
+  #status{min-height:22px;margin:4px 0 14px;color:var(--muted)}
+  
+  /* results card */
+  .hidden{display:none}
+  .card{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:18px 20px;
+    box-shadow:0 18px 40px rgba(0,0,0,.25);
+  }
+  .result-header{
+    display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap
+  }
+  .place{
+    display:flex;flex-direction:column;gap:4px
+  }
+  #city-name{margin:0;font-size:26px}
+  #country{margin:0;color:var(--muted)}
+  .main-readout{
+    display:flex;align-items:center;gap:12px
+  }
+  #icon{width:72px;height:72px;image-rendering:pixelated;display:none}
+  #temperature{font-size:40px;font-weight:800}
+  .details{
+    margin-top:12px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:10px;
+    color:var(--text);
+  }
+  .detail-label{color:var(--muted);margin-right:6px}
+  
