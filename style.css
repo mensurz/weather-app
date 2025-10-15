@@ -72,4 +72,7 @@
     color:var(--text);
   }
   .detail-label{color:var(--muted);margin-right:6px}
+
+  #geo-btn {background:#0b1222; border:1px solid var(--border, #243046);}
+  #geo-btn:hover {filter:brightness(1.07);}
   
