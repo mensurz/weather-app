@@ -1,10 +1,10 @@
 :root{
-    --bg:#0f172a;        /* deep navy */
-    --panel:#0b1222;     /* card bg */
-    --muted:#94a3b8;     /* subtle text */
-    --text:#e2e8f0;      /* main text */
-    --border:#243046;    /* card border */
-    --brand:#3b82f6;     /* button */
+    --bg:#0f172a;        
+    --panel:#0b1222;     
+    --muted:#94a3b8;     
+    --text:#e2e8f0;     
+    --border:#243046;    
+    --brand:#3b82f6;    
   }
   
   *{box-sizing:border-box}
@@ -16,11 +16,9 @@
     color:var(--text);
   }
   
-  /* layout */
   .container{max-width:760px;margin:48px auto;padding:0 20px}
   h1{margin:0 0 20px;font-size:42px;letter-spacing:.3px}
   
-  /* form */
   form{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
   input,select,button{
     border:1px solid var(--border);
@@ -43,10 +41,8 @@
   button:hover{filter:brightness(1.07)}
   button:active{transform:translateY(1px)}
   
-  /* status text */
   #status{min-height:22px;margin:4px 0 14px;color:var(--muted)}
   
-  /* results card */
   .hidden{display:none}
   .card{
     background:var(--panel);
